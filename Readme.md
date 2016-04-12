@@ -1,7 +1,7 @@
-# Личный проект «Нёрдс»
+﻿# Личный проект «Нёрдс»
 
 * Студент: [Olek Unger](https://up.htmlacademy.ru/htmlcss/13/user/177229).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Байдаров](https://htmlacademy.ru/profile/4er).
 
 ---
 
