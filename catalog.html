@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Nёrds<</title>
+</head>
+<body>
+	<header class="main-header-inner ">
+    <div class="container ">
+      <div class="header-top clearfix">
+        <div class="index-logo">
+          <a href="index.html"><img src="#" alt="Nёrds"></a> 
+        </div>
+        <nav class="main-navigation right">
+          <ul>
+            <li><a href="#">студия</a></li>
+            <li><a href="#">клиенты</a></li>
+            <li><a href="#">магазин</a></li>
+           	<li><a href="#">контакты</a></li>
+          </ul>
+        </nav>    
+        <a class="cart right" href="#">корзина</a>
+      </div>
+      <div class="main-header-invite">
+        <h1>Добро пожаловать в магазин готовых макетов</h1>
+      </div>
+    </div>
+  </header>
+  <main class="inner-page container">
+  	<div class="catalog clearfix">
+  		<section class="left-section left">
+  			<form class="filters" action="#" method="get">
+  				<fieldset class="cust">
+  					<legend>стоимость:</legend>
+  						<div class="range-filter">
+  							<div class="range-controls">
+  								<div class="scale">
+  									<div class="bar"></div>
+  								</div>
+  								<div class="toggle min-toggle"></div>
+                	<div class="toggle max-toggle"></div>
+  							</div>
+  							<div class="price-controls">
+  								<label class="min-price">oт<input type="text" value="0"></input></label>
+  								<label class="max-price">до<input type="text" value="15 000"></input></label>
+  							</div>
+  						</div>
+  				</fieldset>
+  				<fieldset class="net">
+  					<legend>сетка:</legend>
+  					<input id="check-1" type="radio" name="net" value="adaptive" checked>
+  					<label for="check-1">Адаптивная</label> 
+
+  					<input id="check-2" type="radio" name="net" value="fixed">
+  					<label for="check-2">Фиксированная</label>
+
+						<input id="check-3" type="radio" name="net" value="elastic">
+  					<label for="check-3">Резиновая</label>
+  				</fieldset>
+  				<fieldset class="features">
+  					<legend>особенности:</legend>
+						<input id="check-4" type="checkbox" name="features" value="slider" checked>
+  					<label for="check-4">Слайдер</label>
+
+  					<input id="check-5" type="checkbox" name="features" value="features-block">
+  					<label for="check-5">Блок преимуществ</label>
+
+  					<input id="check-6" type="checkbox" name="features" value="news" checked>
+  					<label for="check-6">Новости</label>
+
+  					<input id="check-7" type="checkbox" name="features" value="gallery">
+  					<label for="check-7">Галерея</label>
+
+  					<input id="check-8" type="checkbox" name="features" value="basket">
+  					<label for="check-8">Корзина</label>				
+  				</fieldset>
+  				<button class="btn" type="submit">показать</button>	
+  			</form>
+  		</section>
+  		<section class="right-section right">
+  			<div class="sorting-header clearfix">
+  				<span>сортировать:</span>
+          <a href="#">по цене</a>
+          <a href="#">по типу</a>
+          <a href="#">по функционалу</a>
+          <div class="direction">
+          	<a href="#" class="asc selected"></a>
+          	<a href="#" class="desc"></a>    
+        	</div>
+        </div>	
+        <div class="shop clearfix">
+        	<div class="item">
+            <img class="hat" src="#" alt="#">
+            <img class="item-img" src="#" alt="#">
+            <div class="hidden-item-txt">
+              <h3>aviator</h3>
+              <p>Одностраничный текст с авторским дизайном</p>
+              <div class="btn-hidden-txt btn">8000 p.</div> 
+          	</div>
+          </div>
+          <div class="item">
+           	<img class="hat" src="#" alt="#">
+            <img class="item-img" src="#" alt="#">
+            <div class="hidden-item-txt">
+              <h3>sunset</h3>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <div class="btn-hidden-txt btn">10000 p.</div> 
+            </div>
+          </div>
+          <div class="item">
+            <img class="hat" src="#" alt="#">
+            <img class="item-img" src="#" alt="#">
+            <div class="hidden-item-txt">
+              <h3>forte</h3>
+              <p>Отличный макет для личного блога</p>
+              <div class="btn-hidden-txt btn">5000 p.</div> 
+            </div>
+          </div>
+          <div class="item">
+            <img class="hat" src="#" alt="#">
+            <img class="item-img" src="#" alt="#">
+            <div class="hidden-item-txt">
+              <h3>modern organic thai</h3>
+              <p>Сайт для ресторана быстрого питания</p>
+              <div class="btn-hidden-txt btn">12000 p.</div> 
+            </div>
+          </div>
+          <div class="item">
+            <img class="hat" src="#" alt="#">
+            <img class="item-img" src="#" alt="#">
+            <div class="hidden-item-txt">
+              <h3>avenue</h3>
+              <p>Макет блога о путешествиях</p>
+              <div class="btn-hidden-txt btn">8000 p.</div> 
+            </div>
+          </div>
+          <div class="item">
+            <img class="hat" src="#" alt="#">
+            <img class="item-img" src="#" alt="#">
+            <div class="hidden-item-txt">
+              <h3>dovetail</h3>
+              <p>Интернет-магазин с галереей товаров</p>
+              <div class="btn-hidden-txt btn">14000 p.</div> 
+            </div>
+          </div>  
+        </div>
+        <div class="pagination">
+        	<span class="btn pag current">1</span>
+					<a class="btn pag " href="#">2</a>
+					<a class="btn pag" href="#">3</a>
+					<a class="btn pag" href="#">следущая</a>
+				</div>
+  		</section>	
+  	</div>
+  </main>
+  <div class="map ">
+  	<div class="container">
+    	<div class="contacts left">
+      	<h5>nёrds disign studio</h5>   
+      	<p>191186, Санкт_Петербург, <br>
+      	ул. Б. Конюшенная, д.19/8</p>
+      	<p>тел. +7(812) 275-75-75</p>
+      	<a class="btn btn-wire" href="#">напишите нам</a>
+    	</div>
+    	<div class="spear">
+   	  	<img  src="#"  alt="">
+    	<div>
+    </div>
+  </div>  
+  <footer class="main-footer">
+  	<div class="container clearfix"> 
+      <div class="footer-socials left">
+        <a class="social-btn" href="#"> Вконтакте</a>
+        <a class="social-btn" href="#">facebook</a>  
+      	<a class="social-btn" href="#">Инстаграмм</a>
+      </div>    
+      <div class="slogan">
+       <h2>Давайте дружить, это выгодно!</h2>
+       <p>Скидка 10% для друзей из социальных сетей.</p>
+     	</div>
+   	</div>
+  </footer>  
+</body>
+</html>
