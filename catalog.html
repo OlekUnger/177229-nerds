@@ -5,8 +5,8 @@
 	<title>Nёrds<</title>
 </head>
 <body>
-	<header class="main-header-inner ">
-    <div class="container ">
+	<header class="main-header-inner">
+    <div class="container">
       <div class="header-top clearfix">
         <div class="index-logo">
           <a href="index.html"><img src="#" alt="Nёrds"></a> 
@@ -26,11 +26,11 @@
       </div>
     </div>
   </header>
-  <main class="inner-page container">
+  <main class="container"><!--убрал класс-->
   	<div class="catalog clearfix">
   		<section class="left-section left">
   			<form class="filters" action="#" method="get">
-  				<fieldset class="cust">
+  				<fieldset class="price-filter"><!--изменил класс-->
   					<legend>стоимость:</legend>
   						<div class="range-filter">
   							<div class="range-controls">
@@ -41,8 +41,8 @@
                 	<div class="toggle max-toggle"></div>
   							</div>
   							<div class="price-controls">
-  								<label class="min-price">oт<input type="text" value="0"></input></label>
-  								<label class="max-price">до<input type="text" value="15 000"></input></label>
+  								<label class="min-price">oт<input type="text" value="0"></label>
+  								<label class="max-price">до<input type="text" value="15 000"></label>
   							</div>
   						</div>
   				</fieldset>
@@ -78,70 +78,82 @@
   			</form>
   		</section>
   		<section class="right-section right">
-  			<div class="sorting-header clearfix">
+  			<div class="sorting-type-header clearfix"><!--класс по типу-->
   				<span>сортировать:</span>
           <a href="#">по цене</a>
           <a href="#">по типу</a>
           <a href="#">по функционалу</a>
-          <div class="direction">
+          <div class="type-direction">
           	<a href="#" class="asc selected"></a>
           	<a href="#" class="desc"></a>    
         	</div>
         </div>	
         <div class="shop clearfix">
-        	<div class="item">
-            <img class="hat" src="#" alt="#">
-            <img class="item-img" src="#" alt="#">
-            <div class="hidden-item-txt">
+        	<div class="item"><!--блок сделан ссылкой целиком-->
+            <a class="item-img-content" href="#">
+              <img class="hat" src="#" alt="#">
+              <img class="item-img" src="#" alt="#">
+            </a>
+            <a class="hidden-item-txt" href="#">
               <h3>aviator</h3>
               <p>Одностраничный текст с авторским дизайном</p>
-              <div class="btn-hidden-txt btn">8000 p.</div> 
-          	</div>
+              <span class="btn-hidden-txt btn">8000 p.</span> 
+          	</a>
           </div>
           <div class="item">
-           	<img class="hat" src="#" alt="#">
-            <img class="item-img" src="#" alt="#">
-            <div class="hidden-item-txt">
+            <a class="item-img-content" href="#">
+           	  <img class="hat" src="#" alt="#">
+              <img class="item-img" src="#" alt="#">
+            </a>
+            <a class="hidden-item-txt" href="#">
               <h3>sunset</h3>
               <p>Интернет-магазин с личным кабинетом</p>
-              <div class="btn-hidden-txt btn">10000 p.</div> 
-            </div>
+              <span class="btn-hidden-txt btn">10000 p.</span> 
+            </a>
           </div>
           <div class="item">
-            <img class="hat" src="#" alt="#">
-            <img class="item-img" src="#" alt="#">
-            <div class="hidden-item-txt">
+            <a class="item-img-content" href="#">
+              <img class="hat" src="#" alt="#">
+              <img class="item-img" src="#" alt="#">
+            </a>
+            <a class="hidden-item-txt" href="#">
               <h3>forte</h3>
               <p>Отличный макет для личного блога</p>
-              <div class="btn-hidden-txt btn">5000 p.</div> 
-            </div>
+              <span class="btn-hidden-txt btn">5000 p.</span> 
+            </a>
           </div>
           <div class="item">
-            <img class="hat" src="#" alt="#">
-            <img class="item-img" src="#" alt="#">
-            <div class="hidden-item-txt">
+            <a class="item-img-content" href="#">
+              <img class="hat" src="#" alt="#">
+              <img class="item-img" src="#" alt="#">
+            </a>
+            <a class="hidden-item-txt" href="#">
               <h3>modern organic thai</h3>
               <p>Сайт для ресторана быстрого питания</p>
-              <div class="btn-hidden-txt btn">12000 p.</div> 
-            </div>
+              <span class="btn-hidden-txt btn">12000 p.</span> 
+            </a>
           </div>
           <div class="item">
-            <img class="hat" src="#" alt="#">
-            <img class="item-img" src="#" alt="#">
-            <div class="hidden-item-txt">
+            <a class="item-img-content" href="#">
+              <img class="hat" src="#" alt="#">
+              <img class="item-img" src="#" alt="#">
+            </a>
+            <a class="hidden-item-txt" href="#">
               <h3>avenue</h3>
               <p>Макет блога о путешествиях</p>
-              <div class="btn-hidden-txt btn">8000 p.</div> 
-            </div>
+              <span class="btn-hidden-txt btn">8000 p.</span>
+            </a> 
           </div>
           <div class="item">
-            <img class="hat" src="#" alt="#">
-            <img class="item-img" src="#" alt="#">
-            <div class="hidden-item-txt">
+            <a class="item-img-content" href="#">
+              <img class="hat" src="#" alt="#">
+              <img class="item-img" src="#" alt="#">
+            </a>
+            <a class="hidden-item-txt" href="#">
               <h3>dovetail</h3>
               <p>Интернет-магазин с галереей товаров</p>
-              <div class="btn-hidden-txt btn">14000 p.</div> 
-            </div>
+              <span class="btn-hidden-txt btn">14000 p.</span> 
+            </a>
           </div>  
         </div>
         <div class="pagination">
@@ -153,26 +165,26 @@
   		</section>	
   	</div>
   </main>
-  <div class="map ">
-  	<div class="container">
-    	<div class="contacts left">
-      	<h5>nёrds disign studio</h5>   
-      	<p>191186, Санкт_Петербург, <br>
-      	ул. Б. Конюшенная, д.19/8</p>
-      	<p>тел. +7(812) 275-75-75</p>
-      	<a class="btn btn-wire" href="#">напишите нам</a>
-    	</div>
-    	<div class="spear">
-   	  	<img  src="#"  alt="">
-    	<div>
-    </div>
-  </div>  
-  <footer class="main-footer">
+  <footer class="main-footer"><!--карта преехала в футер-->
+    <div class="map">
+      <div class="container">
+        <div class="contacts left">
+          <h5>nёrds disign studio</h5>   
+          <p>191186, Санкт_Петербург,<br>
+          ул. Б. Конюшенная, д.19/8</p>
+          <p>тел. +7(812) 275-75-75</p>
+          <a class="btn btn-write-us" href="#">напишите нам</a><!--класс более классический-->
+        </div>
+        <div class="spear">
+          <img  src="#"  alt="">
+        </div>
+      </div>
+    </div>    
   	<div class="container clearfix"> 
       <div class="footer-socials left">
-        <a class="social-btn" href="#"> Вконтакте</a>
-        <a class="social-btn" href="#">facebook</a>  
-      	<a class="social-btn" href="#">Инстаграмм</a>
+        <a class="social-btn btn-vk" href="#"> Вконтакте</a><!--доп класс кнопок-->
+        <a class="social-btn btn-fb" href="#">facebook</a>  
+      	<a class="social-btn btn-inst" href="#">Инстаграмм</a>
       </div>    
       <div class="slogan">
        <h2>Давайте дружить, это выгодно!</h2>
