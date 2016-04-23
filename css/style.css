@@ -1,5 +1,7 @@
 html,
 body{
+		margin: auto;
+    padding: 0;
 		font-size: 16px;
 		line-height: 22px;
 		color: #283136;
@@ -72,6 +74,7 @@ h4 {
 .logo {
 	float: left;
 	width: 139px;
+	height: 56px;
 	margin-right: 20px;
 	margin-top: 29px;
 	outline: solid red 1px;
