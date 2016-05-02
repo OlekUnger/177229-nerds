@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Nёrds</title>
+  <link rel="stylesheet" type="text/css" href="css/normalise.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <header class="main-header">
     <div class="container">
       <div class="header-top clearfix">
-        <div class="logo left"><img src="img/logo.png" alt="Nёrds"></div>
+        <div class="logo left"><img src="img/logo.png" width="139" height="56" alt="Nёrds"></div>
         <nav class="main-navigation left">
           <ul>
             <li><a href="#">студия</a></li>
@@ -18,10 +20,10 @@
             <li><a href="#">контакты</a></li>
           </ul>
         </nav> 
-        <a class="cart right" href="#">корзина</a>
+        <a class="cart right" href="#"><span class="icon-basket"></span>корзина</a>
       </div>
       <div class="slider">
-        <input type="radio" id="btn-1" name="toggle" >
+        <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle" >
         <input type="radio" id="btn-3" name="toggle">
         <div class="slider-controls">
@@ -32,30 +34,24 @@
         <div class="slides">
           <div class="slide">
             <div class="slide-text">
-              <div class="slide-title">
-                <h2>Долго, дорого,<br>скрупулезно.</h2>
-              </div>
-              <p>Математически выверенный дизайн<br>
-              для вашего сайта или мобильного приложения</p>
+              <h2>Долго, дорого,<br>скрупулезно.</h2>
+                <p>Математически выверенный дизайн<br>
+                для вашего сайта или мобильного приложения</p>
               <a class="btn" href="#">узнать больше</a>
             </div>
           </div>
           <div class="slide">
             <div class="slide-text">
-              <div class="slide-title">
-                <h2>Любите ли вы математику,<br>как любим ее мы?</h2> 
-              </div>
+              <h2>Любите ли вы математику,<br>как любим ее мы?</h2> 
                 <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>
                 за креатив, чтобы дать им возможность все просчитать</p>
-                <a class="btn" href="#">узнать больше</a>
+              <a class="btn" href="#">узнать больше</a>
             </div>  
           </div> 
           <div class="slide">
             <div class="slide-text">
-              <div class="slide-title">
-                <h2>Только наркотики,<br>только хардкор!</h2>
-              </div>
-              <p>Все дизайнерские решения в нашей компании принимаются<br>
+              <h2>Только наркотики,<br>только хардкор!</h2>
+                <p>Все дизайнерские решения в нашей компании принимаются<br>
                 только под воздействием качественных галлюциногенов</p>
               <a class="btn" href="#">узнать больше</a>
             </div>    
@@ -68,7 +64,7 @@
     <section class="services clearfix">
       <div class="service">
         <div class="service-pic">
-          <img src="img/web-site.png" alt="web-site">
+          <img src="img/web-site.png" width="240" height="124" alt="web-site">
         </div>
         <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
@@ -76,16 +72,16 @@
       </div>
       <div class="service">
         <div class="service-pic">
-          <img src="img/apps.png" alt="apps">
+          <img src="img/apps.png" width="240" height="124" alt="apps">
         </div>
           <h3>Приложения</h3>
             <p>Покорите топ-10 приложений<br>
-            в App Store и Google Play</p> 
+            в AppStrore и Google Play</p> 
           <a class="btn btn-apps" href="#">Заказать</a>
       </div>
       <div class="service">
         <div class="service-pic">
-          <img src="img/presnt.png" alt="presentation">
+          <img src="img/presnt.png" width="240" height="124" alt="presentation">
         </div>  
           <h3>Презентации</h3>
             <p>Вы даже не подозреваете,<br>
@@ -109,7 +105,7 @@
       </div>
       <div class="info-content-right right">
         <div class="logo2">
-          <img src="img/logo2.png" alt="nerds">
+          <img src="img/logo2.png" width="240" height="119" alt="nerds">
         </div>
         <h4>Как мы работаем:</h4>
         <ul class="inf">
@@ -121,9 +117,9 @@
     </div> 
     <hr>  
     <div class="partners">
-      <a class="partners-logo" href="#"><img src="img/partner-gluk.png" alt="glukhanko"></a>
-      <a class="partners-logo" href="#"><img src="img/partner-html.png" alt="htmlacademy"></a>
-      <a class="partners-logo" href="#"><img src="img/partner-borodinsk.png" alt="borodinski"></a>
+      <a class="partners-logo" href="#"><img src="img/partner-gluk.png"  width="198" height="37" alt="glukhanko"></a>
+      <a class="partners-logo" href="#"><img src="img/partner-html.png" width="199" height="68" alt="htmlacademy"></a>
+      <a class="partners-logo" href="#"><img src="img/partner-borodinsk.png" width="209" height="89" alt="borodinski"></a>
     </div>
     <hr > 
   </main>
@@ -133,20 +129,17 @@
         <div class="contacts left">
           <h4>nёrds disign studio</h4>   
             <p>191186, Санкт_Петербург,<br>
-            ул. Б. Конюшенная, д.19/8</p>
-            <p>тел. +7(812) 275-75-75</p>
+            ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
           <a class="btn btn-write-us" href="#">напишите нам</a>
-        </div>
-        <div class="spear">
-          <img  src="img/spear.png"  alt="sign">
         </div>
       </div>
     </div>    
     <div class="container clearfix"> 
       <div class="footer-socials left">
-        <a class="social-btn btn-vk" href="#"> Вконтакте</a>
-        <a class="social-btn btn-fb" href="#">facebook</a>  
-        <a class="social-btn btn-inst" href="#">Инстаграмм</a>
+        <a class="social-btn" href="#"><span class="icon-vk"></span> Вконтакте</a>
+        <a class="social-btn" href="#"><span class="icon-facebook"></span>facebook</a>  
+        <a class="social-btn" href="#"><span class="icon-instagramm"></span>Инстаграмм</a>
       </div>    
       <div class="slogan right">
        <h2>Давайте дружить, это выгодно!</h2>

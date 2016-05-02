@@ -2,8 +2,10 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Nёrds<</title>
+	<title>Nёrds-catalog<</title>
+  <link rel="stylesheet" type="text/css" href="css/normalise.css">
   <link rel="stylesheet"  href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header class="main-header-inner">
@@ -16,11 +18,11 @@
           <ul>
             <li><a href="#">студия</a></li>
             <li><a href="#">клиенты</a></li>
-            <li><a href="#">магазин</a></li>
+            <li><a class="visited">магазин</a></li>
            	<li><a href="#">контакты</a></li>
           </ul>
         </nav>    
-        <a class="cart right" href="#">корзина</a>
+        <a class="cart right" href="#"><span class="icon-basket"></span>корзина</a>
       </div>
       <div class="main-header-invite">
         <h1>Добро пожаловать в магазин готовых макетов</h1>
@@ -42,20 +44,20 @@
                 	<div class="toggle max-toggle"></div>
   							</div>
   							<div class="price-controls">
-  								<label class="min-price">oт<input type="text" value="0"></label>
-  								<label class="max-price">до<input type="text" value="15 000"></label>
+  								<label for="min-price">oт<input id="min-price" type="text" value="0"></label>
+  								<label for="max-price">до<input id="max-price" type="text" value="15000"></label>
   							</div>
   						</div>
   				</fieldset>
   				<fieldset class="net-filter">
   					<legend>сетка:</legend>
-  					<input id="check-1" type="radio" name="net" value="adaptive" checked>
+  					<input id="check-1" type="radio" name="net" value="adaptive"  checked >
   					<label for="check-1">Адаптивная</label> 
 
-  					<input id="check-2" type="radio" name="net" value="fixed">
+  					<input id="check-2" type="radio" name="net" value="fixed" >
   					<label for="check-2">Фиксированная</label>
 
-						<input id="check-3" type="radio" name="net" value="elastic">
+						<input id="check-3" type="radio" name="net" value="elastic" disabled>
   					<label for="check-3">Резиновая</label>
   				</fieldset>
   				<fieldset class="features-filter">
@@ -69,7 +71,7 @@
   					<input id="check-6" type="checkbox" name="features" value="news" checked>
   					<label for="check-6">Новости</label>
 
-  					<input id="check-7" type="checkbox" name="features" value="gallery">
+  					<input id="check-7" type="checkbox" name="features" value="gallery" disabled="">
   					<label for="check-7">Галерея</label>
 
   					<input id="check-8" type="checkbox" name="features" value="basket">
@@ -81,38 +83,38 @@
   		<section class="right-section right">
   			<div class="sorting-type-header clearfix">
   				<span>сортировать:</span>
-          <a href="#">по цене</a>
-          <a href="#">по типу</a>
-          <a href="#">по функционалу</a>
+          <a class="sort-grade" href="#">по цене</a>
+          <a class="sort-grade" href="#">по типу</a>
+          <a class="sort-grade" href="#">по функционалу</a>
           <div class="type-direction">
-          	<a href="#" class="asc selected"></a>
-          	<a href="#" class="desc"></a>    
+          	<a href="#" class="asc dir-selected"><span class="icon-down-dir"></span></a>
+          	<a href="#" class="desc"><span class="icon-up-dir"></span></a>    
         	</div>
         </div>	
         <div class="shop clearfix">
         	<div class="item">
-            <a class="item-img-content" href="#"><!--убрал картину с шапкой-->
-              <img class="item-img" src="img/item-1.jpg" alt="Aviator">
+            <a class="item-img-content" href="#">
+              <img class="item-img" src="img/item-1.jpg" width="240" height="240" alt="Aviator">
             </a>
             <a class="hidden-item-txt" href="#">
               <h3>aviator</h3>
-              <p>Одностраничный текст с авторским дизайном</p>
+              <p>Одностраничный макет с авторским дизайном</p>
               <span class="btn-hidden-txt btn">8000 p.</span> 
           	</a>
           </div>
           <div class="item">
             <a class="item-img-content" href="#">
-              <img class="item-img" src="img/item-2.jpg" alt="Sunset">
+              <img class="item-img" src="img/item-2.jpg" width="240" height="240" alt="Sunset">
             </a>
-            <a class="hidden-item-txt" href="#">
+            <a class="hidden-item-txt blocked" href="#">
               <h3>sunset</h3>
-              <p>Интернет-магазин с личным кабинетом</p>
+              <p>Интернет-магазин<br> с личным кабинетом</p>
               <span class="btn-hidden-txt btn">10000 p.</span> 
             </a>
           </div>
           <div class="item">
             <a class="item-img-content" href="#">
-              <img class="item-img" src="img/item-3.jpg" alt="Forte">
+              <img class="item-img" src="img/item-3.jpg" width="240" height="240" alt="Forte">
             </a>
             <a class="hidden-item-txt" href="#">
               <h3>forte</h3>
@@ -122,7 +124,7 @@
           </div>
           <div class="item">
             <a class="item-img-content" href="#">
-              <img class="item-img" src="img/item-4.jpg" alt="Marquee">
+              <img class="item-img" src="img/item-4.jpg" width="240" height="240" alt="Marquee">
             </a>
             <a class="hidden-item-txt" href="#">
               <h3>modern organic thai</h3>
@@ -132,17 +134,17 @@
           </div>
           <div class="item">
             <a class="item-img-content" href="#">
-              <img class="item-img" src="img/item-5.jpg" alt="Avenue">
+              <img class="item-img" src="img/item-5.jpg" width="240" height="240" alt="Avenue">
             </a>
             <a class="hidden-item-txt" href="#">
               <h3>avenue</h3>
-              <p>Макет блога о путешествиях</p>
+              <p>Макет для блога о путешествиях</p>
               <span class="btn-hidden-txt btn">8000 p.</span>
             </a> 
           </div>
           <div class="item">
             <a class="item-img-content" href="#">
-              <img class="item-img" src="img/item-6.jpg" alt="Dovetail">
+              <img class="item-img" src="img/item-6.jpg" width="240" height="240" alt="Dovetail">
             </a>
             <a class="hidden-item-txt" href="#">
               <h3>dovetail</h3>
@@ -155,7 +157,7 @@
         	<span class="btn pag current">1</span>
 					<a class="btn pag " href="#">2</a>
 					<a class="btn pag" href="#">3</a>
-					<a class="btn pag" href="#">следущая</a>
+					<a class="btn pag next" href="#">следущая</a>
 				</div>
   		</section>	
   	</div>
@@ -166,22 +168,19 @@
         <div class="contacts left">
           <h4>nёrds disign studio</h4>   
           <p>191186, Санкт_Петербург,<br>
-          ул. Б. Конюшенная, д.19/8</p>
-          <p>тел. +7(812) 275-75-75</p>
+          ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
           <a class="btn btn-write-us" href="#">напишите нам</a>
-        </div>
-        <div class="spear">
-          <img  src="img/spear.png"  alt="sign">
         </div>
       </div>
     </div>    
   	<div class="container clearfix"> 
       <div class="footer-socials left">
-        <a class="social-btn btn-vk" href="#"> Вконтакте</a>
-        <a class="social-btn btn-fb" href="#">facebook</a>  
-      	<a class="social-btn btn-inst" href="#">Инстаграмм</a>
+        <a class="social-btn" href="#"><span class="icon-vk"></span> Вконтакте</a>
+        <a class="social-btn" href="#"><span class="icon-facebook"></span>facebook</a>  
+      	<a class="social-btn" href="#"><span class="icon-instagramm"></span>Инстаграмм</a>
       </div>    
-      <div class="slogan">
+      <div class="slogan right">
        <h2>Давайте дружить, это выгодно!</h2>
        <p>Скидка 10% для друзей из социальных сетей.</p>
      	</div>
