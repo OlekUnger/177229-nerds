@@ -441,8 +441,8 @@ img {
 	margin:auto;
 	position: relative;
 	margin-bottom: 77px;
-	background-image:url(../img/spear.png), 
-										url(../img/map.jpg);		
+	background-image:url('../img/spear.png'), 
+										url('../img/map.jpg');		
 	background-repeat: no-repeat, no-repeat;
 	background-position: right 131px top 110px, 39% 39%;
 }
@@ -765,6 +765,7 @@ input[type="checkbox"]:checked:disabled + label::before {color:#e9e9e9;}
 	font-size: 23px;
 	width: 12px;
 	height: 23px;
+	font-family:  "symbols-nerds";
 	color: #c1c1c1;
 	margin: 0;
 }
@@ -833,7 +834,7 @@ input[type="checkbox"]:checked:disabled + label::before {color:#e9e9e9;}
 	box-sizing: border-box;
 }
 
-.hidden-item-txt:not(.blocked) {display: none;}
+.hidden-item-txt {display: none;}
 	
 .item:hover .hidden-item-txt {
 	display: block;	
