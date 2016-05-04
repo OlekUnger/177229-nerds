@@ -146,6 +146,22 @@
        <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
-  </footer>  
+  </footer> 
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <form class="login-form" action="text" method="post">
+      <div class="half-width">
+        <label for="name">Ваше имя:</label>
+        <input  id="name" type="" name="name" placeholder="представьтесь, пожалуйста">
+      </div>
+       <div class="half-width">
+        <label for="email">Ваш e-mail:</label>
+        <input  id="email" type="text" name="email" placeholder="для отправки ответа" required>
+      </div>
+      <label for="comment-field">Текст письма:</label>
+      <textarea id="comment-field" name="comment" rows="4" placeholder="в свободной форме"></textarea>
+      <button class="btn" type="submit">отправить</button>
+    </form>
+  </div>
 </body>
 </html>
