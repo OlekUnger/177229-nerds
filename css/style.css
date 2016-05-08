@@ -113,7 +113,7 @@ img {
 	height: auto;
 }
 
-/*header*/
+/*------------------------HEADER----------------------------------------*/
 
 .main-header{
 	margin-bottom: 80px;
@@ -295,8 +295,7 @@ img {
 #btn-2:checked ~ .slides .slide:nth-child(2) {display: block;}	
 #btn-3:checked ~ .slides .slide:nth-child(3) {display: block;}
 
-/*main*/
-	
+/*-------------------------------MAIN_INDEX--------------------------------*/
 .services {
 	margin-bottom: 80px;
 }
@@ -440,106 +439,7 @@ img {
 .partners-logo:hover { opacity: 1;}
 .partners-logo:active { opacity: 1;}
 
-/*footer*/
-.main-footer {
-	margin-top: 85px;
-	min-height: 635px;
-}
 
-.map {
-	width:1200px;
-	height: 416px;
-	margin:auto;
-	position: relative;
-	margin-bottom: 77px;
-	background-color: #eee;
-	overflow: hidden;
-}
-.map .map-link {
-	display: block;
-	width: 1727px;
-	height: 808px;
-	background-image:url('../img/map1.png');											
-	background-repeat: no-repeat;
-	background-position:-185px -160px; 
-}
-
-.contacts {
-	position: absolute;
-	top: 87px;
-	width: 203px;
-	text-align: left;
-	padding: 24px 23px 26px 21px;
-	background-color: #ffffff;
-}
-
-.contacts h4 {
-	margin: 0;
-}
-
-.contacts p {
-	line-height: 20px;
-	margin-top: 13px;
-	margin-bottom: 17px;
-}
-
-.btn-write-us {
-	width: 100%;
-	padding: 11px 0;
-	background-color: #fb565a;
-	margin-top: 14px;
-}
-
-.btn-write-us:hover {background-color: #d6494d;}
-.btn-write-us:active {background-color: #b63538;
-	box-shadow: inset 0 3px 0 #9b2d30;
-}
-
-.footer-socials {
-	height: 62px;
-	text-align: left;
-}
-
-.social-btn {
-	display: inline-block;
-	vertical-align: top;
-	width: 62px;
-	height: 62px;
-	margin:0;
-	margin-right: 25px;
-	font-size: 0;
-	color:white;
-	text-align: center;
-	border-radius: 50%;
-	background: #e1e1e1 ;
-}
-
-.social-btn:hover {background-color: #fb565a;}
-.social-btn:active {  
-	background-color: #d6494d;
-  box-shadow: inset 0 3px 0 #b63e42;
-}
-
-.social-btn span {
-	font-size: 23px;
-	line-height: 62px;
-}
-
-.slogan {
-	display: inline-block;
-	margin-top: 0px;
-	min-height: 74px;
-	width: 560px;
-}
-
-.slogan h2 {
-	margin: 0;
-	margin-top: -4px;
-}
-
-.slogan p {
-	margin-top:12px;
-}
 /*внутр страница*/
 
 .main-header-inner {
@@ -560,7 +460,7 @@ img {
 	margin: 0;
 }
 
-/*main*/
+/*---------------------------MAIN-CATALOG-----------------------*/
 
 /*left*/
 
@@ -730,7 +630,7 @@ input[type="checkbox"]:checked:disabled + label::before {color:#e9e9e9;}
   	box-shadow: inset 0 3px 0 #b5b5b5;
 }
 
-/*right*/
+/*--right---*/
 
 .right-section {
 	width: 560px;
@@ -916,7 +816,104 @@ input[type="checkbox"]:checked:disabled + label::before {color:#e9e9e9;}
   box-shadow: inset 0 3px 0 #b5b5b5;
 }
 
-/*--modal window--*/
+/*-------------------FOOTER---------------------------------*/
+
+.main-footer {
+	margin-top: 85px;
+	min-height: 635px;
+}
+
+.map {
+	height: 416px;
+	margin:auto;
+	position: relative;
+	margin-bottom: 77px;
+	background-color: #eee;										
+	background-repeat: no-repeat;
+	background-position:-185px -160px;
+	overflow: hidden;
+}
+
+
+.contacts {
+	position: absolute;
+	top: 87px;
+	width: 203px;
+	text-align: left;
+	padding: 24px 23px 26px 21px;
+	background-color: #ffffff;
+}
+
+.contacts h4 {
+	margin: 0;
+}
+
+.contacts p {
+	line-height: 20px;
+	margin-top: 13px;
+	margin-bottom: 17px;
+}
+
+.btn-write-us {
+	width: 100%;
+	padding: 11px 0;
+	background-color: #fb565a;
+	margin-top: 14px;
+}
+
+.btn-write-us:hover {background-color: #d6494d;}
+.btn-write-us:active {background-color: #b63538;
+	box-shadow: inset 0 3px 0 #9b2d30;
+}
+
+.footer-socials {
+	height: 62px;
+	text-align: left;
+}
+
+.social-btn {
+	display: inline-block;
+	vertical-align: top;
+	width: 62px;
+	height: 62px;
+	margin:0;
+	margin-right: 25px;
+	font-size: 0;
+	color:white;
+	text-align: center;
+	border-radius: 50%;
+	background: #e1e1e1 ;
+}
+
+.social-btn:hover {background-color: #fb565a;}
+.social-btn:active {  
+	background-color: #d6494d;
+  box-shadow: inset 0 3px 0 #b63e42;
+}
+
+.social-btn span {
+	font-size: 23px;
+	line-height: 62px;
+}
+
+.slogan {
+	display: inline-block;
+	margin-top: 0px;
+	min-height: 74px;
+	width: 560px;
+}
+
+.slogan h2 {
+	margin: 0;
+	margin-top: -4px;
+}
+
+.slogan p {
+	margin-top:12px;
+}
+
+/*-----------------------modal window------------------------*/
+
 @keyframes bounce {
 	0% {transform: translateY(-2000px);}	
 	70% {transform: translateY(30px);}
@@ -945,20 +942,17 @@ input[type="checkbox"]:checked:disabled + label::before {color:#e9e9e9;}
 	-o-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	z-index: 500;
 }
 
-.modal-content-map {
+/* .modal-content-map{
 	display:none;
-	position:fixed;
-	top:50%;
-	left:0;
-	right: 0;
-	margin-top:-250px;
-	width: 100%;
-	height: 500px;
-	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-	z-index: 150;
-}
+	height: 416px;
+	z-index: 510;	
+	}
+
+.modal-content-show.modal-content-map{animation: none;}*/
+
 
 .modal-content-show {
 	display: block;
@@ -967,7 +961,8 @@ input[type="checkbox"]:checked:disabled + label::before {color:#e9e9e9;}
 
 .modal-error {animation: shake 0.6s;}
 
-.modal-content-close {
+/*.modal-content-map-close,*/
+.modal-content-close{
 	position: absolute;
 	top:6px;
 	right: 6px;
@@ -980,9 +975,12 @@ input[type="checkbox"]:checked:disabled + label::before {color:#e9e9e9;}
 	border-radius: 50%;
 	background-color: #fb565a;
 }
- 
+
+
+/*.modal-content-map-close::before,
+.modal-content-map-close::after,*/  
 .modal-content-close::before,
-.modal-content-close::after {
+.modal-content-close::after{
 	content: "";
 	position: absolute;
 	top: 17px;
@@ -992,9 +990,14 @@ input[type="checkbox"]:checked:disabled + label::before {color:#e9e9e9;}
 	background-color: #ffffff;
 }
 
-.modal-content-close::before {transform: rotate(45deg);}
-.modal-content-close::after {transform: rotate(-45deg);}
 
+/*.modal-content-map-close::before,*/ 
+.modal-content-close::before{transform: rotate(45deg);}
+
+/*.modal-content-map-close::after,*/
+.modal-content-close::after{transform: rotate(-45deg);}
+
+ 
 .login-form .half-width {
 	display: inline-block;
 	vertical-align: top;
