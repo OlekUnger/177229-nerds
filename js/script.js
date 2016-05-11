@@ -1,3 +1,4 @@
+
     var link = document.querySelector(".btn-write-us");
     var popup = document.querySelector(".modal-content");
     var close = document.querySelector(".modal-content-close");
@@ -40,5 +41,10 @@
             }
         }
       });
+
+     var mapBg = document.querySelector(".map-bg");
+      if (mapBg) {
+        mapBg.classList.add("none");
+      }
 
      
